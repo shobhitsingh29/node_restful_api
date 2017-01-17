@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content=""/>
+    <meta name="description" content="goes here..."/>
+    <meta name="keywords" content="keyword 1, keyword 2"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Asset Tracker SigUp</title>
+    <link href="/public/css/global.css" rel="stylesheet">
+</head>
+<body>
+<div id="signUp" role="main" class="container clear-fix">
+    <section role="region" class="col-12 mob-col-12" >
+        <!-- ====================== Main Heading begins...===============================  -->
+        <!--[if lt IE 8]>
+        <p>You are using an
+            <strong>outdated</strong> browser.
+            Please<a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+        <![endif]-->
+        <div id='heading' class="col-7 mob-col-12">
+            <div class="logoImage">
+                <div  class='sprite logosapient' title="logo of sapient"></div>
+            </div>
+            <div id="mainHeadingDiv">
+                <h1>
+                    <span>ASSETS</span>
+                    TRACKER SYSTEM
+                </h1>
+            </div>
+        </div>
+        <!--  =========================  Main Heading section ends... ==========================   -->
+        <!--  ============================ Registration form section begins... ==========================   -->
+        <div class='form col-5 mob-col-9' >
+            <form method="post" name="loginForm" id="loginForm">
+                <fieldset>
+                    <legend>REGISTRATION</legend>
+                    <div>
+                        <label for="fullName" class="register-hidden">Full Name:</label>
+                        <input type="text" autocomplete="on" id="fullName" autofocus placeholder="Full Name" name="fullName"
+                               class="form-input"/>
+                    </div>
+                    <div>
+                        <label for="oracleId" class="register-hidden">Oracle Id:</label>
+                        <input type="text" autocomplete="on" placeholder="OracleId" id="oracleId" name="oracleId"
+                               class="form-input"/>
+                    </div>
+                    <div>
+                        <label for="email" class="register-hidden">Email:</label>
+                        <input type="email" autocomplete="on" id="email" placeholder="Email" name="email"
+                               class="form-input"/>
+                    </div>
+                    <div>
+                        <label for="phone" class="register-hidden">Phone:</label>
+                        <input type="tel" autocomplete="on" id="phone" placeholder="Phone" name="phone"
+                               class="form-input"/>
+                    </div>
+                    <div>
+                        <label for="jobTitle" class="register-hidden">Job Title:</label>
+                        <input type="text" autocomplete="on" id="jobTitle" class="form-input"
+                               name="jobTitle" placeholder="Job Title"/>
+                    </div>
+                    <div>
+                        <label for="jobLocation" class="register-hidden">location:</label>
+                        <input type="text" autocomplete="on" id="jobLocation"
+                               class="form-input" name="jobLocation" placeholder="Location"/>
+                    </div>
+                    <div>
+                        <label for="password" class="register-hidden">New Password:</label>
+                        <input type="password" autocomplete="on" id="password" class="form-input"
+                               name="password" placeholder="New Password"/>
+                    </div>
+                    <div>
+                        <label for="confirmPassword" class="register-hidden">Confirm Password:</label>
+                        <input type="password" autocomplete="on" id="confirmPassword" class="form-input"
+                               name="confirmPassword" placeholder="Confirm Password"/>
+                    </div>
+                    <div>
+                        <label for="signUpBtnReg" class="register-hidden ">SIGN UP:</label>
+                        <input type="submit" value="SIGN UP" id="signUpBtnReg"  class="primary-button" name="signUp"/>
+                    </div>
+                </fieldset>
+            </form>
+            <!-- =================== Registration form section ends.. ========================.-->
+        </div>
+    </section>
+</div>
+<script src="/public/javascripts/vendor/jquery/jquery-1.12.0.js"></script>
+<script src="/public/javascripts/vendor/jquery/jquery.validate.js"></script>
+<script src="/public/javascripts/vendor/jquery/additional-methods.js"></script>
+<script src="/public/javascripts/vendor/placeholder.js"></script>
+<script src="/config.js"></script>
+<script src="/public/javascripts/global/common/common.js"></script>
+<script src="/public/javascripts/validate/validate.js"></script>
+<script src="/public/javascripts/signUp/signUp.js"></script>
+<script src="/public/javascripts/global/lightBox/lightBox.js"></script>
+</body>
+</html>
+

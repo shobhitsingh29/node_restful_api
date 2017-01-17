@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=yes"/>
+    <title>Add Device</title>
+    <link href="/public/javascripts/vendor/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+    <link href="/public/css/global.css" rel="stylesheet">
+</head>
+<body class="addDev">
+    <!--header section of page-->
+    <!--#include file="../global/header/header.html" -->
+    <!--navigation menu of page-->
+    <!--#include file="../global/navigation/navigation.html" -->
+    <div class="container clear-fix">
+        <div class="hide-mobile"><!--#include file="../global/leftPanel/leftPanel.html" --></div>
+        <!--#include file="addDevice.html" -->
+    </div>
+    <!--footer section of page-->
+    <!--#include file="../global/footer/footer.html" -->
+
+    <script src="/public/javascripts/global/leftPanel/leftPanel.js"></script>
+    <script src="/public/javascripts/addDevice/addDevice.js"></script>
+    <script src="../../public/javascripts/global/lightBox/lightBox.js"></script>
+</body>
+</html>

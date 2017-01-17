@@ -1,0 +1,128 @@
+
+
+.addDev #leftPanel > ul ~ div {
+    display: none;
+}
+
+#addDevice section, #lostDevice section {
+    background-color: #424242;
+    border-radius: 0.313em;
+    margin-top: 0.313em;
+}
+
+.addDev label {
+    display: none;
+}
+
+#addDevice {
+    > h1 ~ section > form > div {
+        color: #979797;
+        font-size: medium;
+        margin: 2.188em 0.625em 0.625em 0.625em;
+        clear: both;
+        display: table;
+    }
+    div {
+        color: #979797;
+        margin: 0.875em 0 0 0;
+    }
+    dl {
+        margin: 0 0 0.625em 5.5em;
+    }
+    dd {
+        position: relative;
+    }
+    label.error {
+        display: block;
+    }
+}
+
+#lostDevice label.error {
+    display: block;
+}
+
+#addDevice {
+    dt {
+        background: url(/public/images/system/arrow.png) no-repeat scroll right center;
+        display: block;
+        padding-right: 1.250em;
+        border: 1px solid #969696;
+        width: 8.5em;
+        display: block;
+        padding: 0.438em;
+    }
+    dd ul {
+        background-color: #424242;
+        border: 1px solid #969696;
+        color: #969696;
+        display: none;
+        padding: 0.313em 0;
+        position: absolute;
+        top: 0.125em;
+        width: 8.5em;
+        list-style: none;
+        li {
+            padding: 0.250em;
+            display: block;
+            background-color: #424242;
+        }
+    }
+    input[type="submit"] {
+        font-size: medium;
+        width: 43%;
+        margin: 2.5em 0 4em 0;
+    }
+    form {
+        margin-left: 0.938em;
+        padding: 0;
+    }
+}
+
+#lostDevice form {
+    margin-left: 0.938em;
+    padding: 0;
+}
+
+#addDevice input[type="text"] {
+    padding: 1.7em 0 0.5em 0.5em;
+    width: 58%;
+    font-size: medium;
+}
+
+#lostDevice input {
+    &[type="text"] {
+        padding: 1.7em 0 0.5em 0.5em;
+        width: 58%;
+        font-size: medium;
+    }
+    &[type="submit"] {
+        font-size: medium;
+        margin: 14em 0 3em 0;
+        width: 43%;
+    }
+}
+
+#addDevice {
+    .select-wrap div {
+        display: inline-block;
+    }
+    .label-to-appear {
+        color: #979797;
+        font-size: medium;
+        margin-right: 6%;
+    }
+}
+
+.selectMenu {
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+@media only screen and (max-width: 30em) {
+    #addDevice input[type="text"], #lostDevice input[type="text"], #addDevice input[type="submit"], #lostDevice input[type="submit"] {
+        width: 95%;
+    }
+    .ui-state-default {
+        margin-top: 10px;
+    }
+}

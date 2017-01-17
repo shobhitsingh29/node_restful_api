@@ -1,0 +1,112 @@
+/**
+* NAME OF THE STYLESHEET (signUp.css)
+* The styles in this file represent styles for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    SHOBHIT SINGH, SapientNitro <ssingh239@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*/
+/*=========== Variables for Left Panel ===========*/
+
+#signUp {
+    main {
+        display: block;
+    }
+    section {
+        position: relative;
+        margin-top: 120px;
+        display: table;
+    }
+    #heading {
+        margin-top: 47px;
+        display: table-cell;
+    }
+    .form {
+        display: table-cell;
+    }
+    h2 {
+        color: #FFF;
+        font-size: 1.8em;
+    }
+    h1 {
+        font-size: 3.71em;
+        margin-top: 42px;
+        font-weight: lighter;
+        span {
+            padding-right: 44%;
+        }
+    }
+    #mainHeadingDiv {
+        letter-spacing: 4px;
+    }
+    .form-input {
+        width: 70%;
+        font-size: 1.2em;
+        padding-left: 6%;
+    }
+    .primary-button {
+        width: 75%;
+        font-size: 1.2em;
+    }
+    input {
+        margin-top: 6%;
+    }
+    label.error {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+/*=====================
+Media Query for mobile devices
+=======================*/
+@media only screen and (max-width: 480px) {
+    #signUp {
+        #heading {
+            margin-top: 0;
+        }
+        #logoImg {
+            margin-left: 32%;
+        }
+        #mainHeadingDiv {
+            margin-left: 10%;
+            margin-top: 20px;
+        }
+        h1 span {
+            padding-right: 0;
+        }
+        h2 {
+            padding-left: .5em;
+            font-size: 1.4em;
+        }
+        h1 {
+            font-size: 1.7em;
+            margin: 0;
+        }
+        .form {
+            position: relative;
+            left: 9%;
+            #loginForm {
+                margin-top: 10%;
+                font-size: 1.2em;
+            }
+        }
+        input {
+            margin-left: 3%;
+            margin-top: 30px;
+        }
+        .sprite.logosapient {
+            margin: 0 auto;
+        }
+        .form-input {
+            width: 88%;
+        }
+        .primary-button {
+            width: 94%;
+        }
+        section {
+            margin-top: 10px;
+        }
+    }
+}

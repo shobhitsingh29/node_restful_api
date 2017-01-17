@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=yes"/>
+    <title>Asset Tracker</title>
+    <link href="/public/css/global.css" rel="stylesheet">
+</head>
+<body>
+<!--#include file="../global/header/header.html" -->
+<!--navigation menu of page-->
+<!--#include file="../global/navigation/navigation.html" -->
+    <div class="container clear-fix">
+        <div class="hide-mobile"><!--#include file="../global/filter/filter.html" -->
+        </div>
+        <!--#include file="assetRequestAdmin.html" -->
+    </div>
+    <!--footer section of page-->
+    <!--#include file="../global/footer/footer.html" -->
+</body>
+<script src="../public/javascripts/assestRequestAdmin/assetRequestAdmin.js"></script>
+<script src="/public/javascripts/search/search.js"></script>
+</html>

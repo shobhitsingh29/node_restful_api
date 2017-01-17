@@ -1,0 +1,2290 @@
+/*======= CSS for Variable ======*/
+/*=========== Variables for Common CSS ===========*/
+/*=========== Variables for Header ===========*/
+/*=========== Variables for Login ===========*/
+/*========== Variables for Device History, Manage Devices and Asset Request========*/
+/*=========== Variables for Left Panel ===========*/
+/*=========== Variables for Filter ===========*/
+/*============================= variables for User Profile===================*/
+/*======= CSS for Reset ======*/
+html, body, div, span, applet, object
+, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+/*======= CSS for Grid Layout ======*/
+/*  GRID OF TWELVE FOR DESKTOP
+============================================================================= */
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+.to-left {
+  float: left; }
+
+.to-right {
+  float: right; }
+
+.to-clear {
+  clear: both;
+  padding: 0;
+  margin: 0; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left; }
+
+/*  GRID OF TWELVE FOR SMALL DEVICES
+============================================================================= */
+@media only screen and (max-width: 30em) {
+  .mob-col-1 {
+    width: 8.33%; }
+
+  .mob-col-2 {
+    width: 16.66%; }
+
+  .mob-col-3 {
+    width: 25%; }
+
+  .mob-col-4 {
+    width: 33.33%; }
+
+  .mob-col-5 {
+    width: 41.66%; }
+
+  .mob-col-6 {
+    width: 50%; }
+
+  .mob-col-7 {
+    width: 58.33%; }
+
+  .mob-col-8 {
+    width: 66.66%; }
+
+  .mob-col-9 {
+    width: 75%; }
+
+  .mob-col-10 {
+    width: 83.33%; }
+
+  .mob-col-11 {
+    width: 91.66%; }
+
+  .mob-col-12 {
+    width: 100%; }
+
+  .hide-mobile {
+    display: none; } }
+/*======= Common CSS ======*/
+/*Font
+=============================================================================*/
+@font-face {
+  font-family: SapientCentroSlab-XThin;
+  src: url("/public/fonts/SapientCentroSlab-XThin.otf") format("opentype"); }
+/*Html
+=============================================================================*/
+html {
+  min-height: 100%;
+  position: relative; }
+
+/*Body
+=============================================================================*/
+body {
+  background: url("/public/images/system/common/background.png") no-repeat;
+  background-size: 100% 100%;
+  font-size: 0.875em;
+  font-style: normal; }
+
+body, input, span, label, select, h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, section, summary,
+time, mark, audio, video, canvas {
+  font-family: SapientCentroSlab-XThin, Arial; }
+
+/*primary Button
+=============================================================================*/
+.primary-button, .secondary-button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.3125em;
+  font-size: 0.875em;
+  height: 3.125em;
+  outline: 0;
+  text-align: center;
+  width: 56%; }
+
+.primary-button {
+  background-color: #da2627;
+  color: #ffffff; }
+
+.secondary Button {
+  color: #808080;
+  background-color: #ffffff; }
+
+/*H1 Tag
+=============================================================================*/
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+/*Input Box
+=============================================================================*/
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+  background: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #969696;
+  outline: 0;
+  width: 51%; }
+
+/*Input Box content
+=============================================================================*/
+.form-input {
+  color: #ffffff;
+  font-size: 0.875em;
+  padding-left: 5%; }
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="text"]:-ms-input-placeholder {
+  color: #979797; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.clear-fix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+#errorPage {
+  background: none;
+  text-align: center; }
+
+#errorPage h1 {
+  color: red; }
+
+/*Error handling classes
+=============================================================================*/
+.form-error {
+  color: red; }
+
+.form-hidden {
+  display: none; }
+
+/*Cursor shape
+=============================================================================*/
+.cursorPointer {
+  cursor: pointer; }
+
+@media only screen and (max-width: 30em) {
+  h1 {
+    margin-left: 2%; } }
+/*======= CSS for Sprite ======*/
+.sprite {
+  background: url("/public/images/system/common/sprite.png") no-repeat top left;
+  width: 58px;
+  height: 55px; }
+
+.sprite.aprooved {
+  background-position: 0 0;
+  width: 43px;
+  height: 43px; }
+
+.sprite.button {
+  background-position: 0 -53px;
+  width: 24px;
+  height: 22px; }
+
+.sprite.button1 {
+  background-position: 0 -85px;
+  width: 23px;
+  height: 23px; }
+
+.sprite.calendarIcon {
+  background-position: 0 -118px;
+  width: 23px;
+  height: 23px; }
+
+.sprite.background {
+  background-position: 0 -151px;
+  width: 1440px;
+  height: 775px; }
+
+.sprite.colour1 {
+  background-position: 0 -936px;
+  width: 10px;
+  height: 10px; }
+
+.sprite.colour2 {
+  background-position: 0 -956px;
+  width: 10px;
+  height: 10px; }
+
+.sprite.colour3 {
+  background-position: 0 -976px;
+  width: 10px;
+  height: 10px; }
+
+.sprite.colour4 {
+  background-position: 0 -996px;
+  width: 10px;
+  height: 10px; }
+
+.sprite.colour5 {
+  background-position: 0 -1016px;
+  width: 10px;
+  height: 10px; }
+
+.sprite.delete {
+  background-position: 0 -1036px;
+  width: 31px;
+  height: 27px; }
+
+.sprite.desktopHeader1 {
+  background-position: 0 -1073px;
+  width: 1500px;
+  height: 60px; }
+
+.sprite.deviceUsageArrowIcon {
+  background-position: 0 -1143px;
+  width: 20px;
+  height: 20px; }
+
+.sprite.downArrow {
+  background-position: 0 -1173px;
+  width: 28px;
+  height: 24px; }
+
+.sprite.dropdown {
+  background-position: 0 -1207px;
+  width: 15px;
+  height: 12px; }
+
+.sprite.edit {
+  background-position: 0 -1229px;
+  width: 23px;
+  height: 24px; }
+
+.sprite.headerBackgroundMobile {
+  background-position: 0 -1263px;
+  width: 320px;
+  height: 58px; }
+
+.sprite.help {
+  background-position: 0 -1331px;
+  width: 16px;
+  height: 15px; }
+
+.sprite.icon1 {
+  background-position: 0 -1356px;
+  width: 21px;
+  height: 16px; }
+
+.sprite.icon2 {
+  background-position: 0 -1382px;
+  width: 21px;
+  height: 16px; }
+
+.sprite.iconAllocatedDevices {
+  background-position: 0 -1408px;
+  width: 60px;
+  height: 57px; }
+
+.sprite.iconAvailableDevices {
+  background-position: 0 -1475px;
+  width: 60px;
+  height: 57px; }
+
+.sprite.iconDamagedDevices {
+  background-position: 0 -1542px; }
+
+.sprite.iconLostDevices {
+  background-position: 0 -1607px; }
+
+.sprite.iconNoDevices {
+  background-position: 0 -1672px; }
+
+.sprite.iconPendingDevices {
+  background-position: 0 -1737px; }
+
+.sprite.iconUnusedDevices {
+  background-position: 0 -1802px;
+  height: 56px; }
+
+.sprite.iconUpcomingDevices {
+  background-position: 0 -1868px; }
+
+.sprite.iconUserQueueDevices {
+  background-position: 0 -1933px;
+  width: 60px;
+  height: 56px; }
+
+.sprite.ipad {
+  background-position: 0 -1999px;
+  width: 356px;
+  height: 238px; }
+
+.sprite.logo {
+  background-position: 0 -2247px;
+  width: 142px;
+  height: 29px; }
+
+.sprite.logosapient {
+  background-position: 0 -2286px;
+  width: 125px;
+  height: 29px; }
+
+.sprite.logout {
+  background-position: 0 -2325px;
+  width: 17px;
+  height: 17px; }
+
+.sprite.minus {
+  background-position: 0 -2352px;
+  width: 43px;
+  height: 43px; }
+
+.sprite.mobileCompanyLogo {
+  background-position: 0 -2405px;
+  width: 17px;
+  height: 33px; }
+
+.sprite.mobileHeaderbefore480123 {
+  background-position: 0 -2448px;
+  width: 480px;
+  height: 60px; }
+
+.sprite.mobileHeaderNav1 {
+  background-position: 0 -2518px; }
+
+.sprite.mobileBackground {
+  background-position: 0 -2583px;
+  width: 480px;
+  height: 800px; }
+
+.sprite.mobileHeaderNav2 {
+  background-position: 0 -3393px;
+  width: 400px;
+  height: 60px; }
+
+.sprite.passwordLogo {
+  background-position: 0 -3463px;
+  width: 16px;
+  height: 20px; }
+
+.sprite.pic1 {
+  background-position: 0 -3493px;
+  width: 113px;
+  height: 112px; }
+
+.sprite.pic2 {
+  background-position: 0 -3615px; }
+
+.sprite.pic3 {
+  background-position: 0 -3680px; }
+
+.sprite.pic4 {
+  background-position: 0 -3745px; }
+
+.sprite.pic5 {
+  background-position: 0 -3810px; }
+
+.sprite.pic6 {
+  background-position: 0 -3875px; }
+
+.sprite.pic7 {
+  background-position: 0 -3940px; }
+
+.sprite.pic8 {
+  background-position: 0 -4005px; }
+
+.sprite.pic9 {
+  background-position: 0 -4070px; }
+
+.sprite.pic10 {
+  background-position: 0 -4135px;
+  width: 26px;
+  height: 26px; }
+
+.sprite.plus {
+  background-position: 0 -4171px;
+  width: 43px;
+  height: 43px; }
+
+.sprite.rightArrow {
+  background-position: 0 -4224px;
+  width: 22px;
+  height: 26px; }
+
+.sprite.sapientLogo {
+  background-position: 0 -4260px;
+  width: 96px;
+  height: 96px; }
+
+.sprite.sap-small-logo {
+  background-position: 0 -4366px;
+  width: 29px;
+  height: 64px; }
+
+.sprite.search {
+  background-position: 0 -4440px;
+  width: 19px;
+  height: 19px; }
+
+.sprite.stephini {
+  background-position: 0 -4469px;
+  width: 354px;
+  height: 430px; }
+
+.sprite.unapprooved {
+  background-position: 0 -4909px;
+  width: 43px;
+  height: 43px; }
+
+.sprite.top-logo {
+  background-position: 0 -4962px;
+  width: 2560px;
+  height: 120px; }
+
+.sprite.username {
+  background-position: 0 -5092px;
+  width: 20px;
+  height: 100px; }
+
+.sprite.usernameIcon {
+  background-position: 0 -5202px;
+  width: 19px;
+  height: 23px; }
+
+.sprite.usernameLogo {
+  background-position: 0 -5235px;
+  width: 19px;
+  height: 23px; }
+
+/*======= CSS for Header ======*/
+/*=============================  Header Css ====================================================*/
+#header {
+  height: 58px;
+  width: 100%;
+  background-color: white; }
+
+#header > div {
+  background-image: url("/public/images/system/DesktopHeader.png");
+  background-repeat: no-repeat;
+  height: 100%; }
+
+#header div > img {
+  position: relative;
+  left: 2.2%;
+  width: 1.5%;
+  margin-top: 15px;
+  height: 57%; }
+
+#header div div img {
+  height: 76%;
+  width: 23%;
+  padding-left: 10px;
+  margin: 8px 8px 0 0; }
+
+#haeder ul li {
+  padding: 7px; }
+
+#header ul li img {
+  width: 17%;
+  border-radius: 15px; }
+
+#header div div {
+  float: right;
+  width: 16%;
+  height: 86%;
+  padding-top: 0.5%;
+  font-size: 14px;
+  color: #333333;
+  position: relative;
+  content: "";
+  display: flex;
+  clear: both; }
+
+#header div div p {
+  margin-right: 1px;
+  margin-top: 13%;
+  float: left;
+  width: 76%;
+  text-align: right; }
+
+#header ul {
+  list-style-type: none;
+  background-color: white;
+  top: 95%;
+  z-index: 1;
+  border-radius: 5px;
+  width: 80%;
+  position: absolute;
+  right: 0; }
+
+#header a {
+  color: black; }
+
+#header ul li:hover {
+  background-color: red; }
+
+#header .display-table {
+  display: table; }
+
+header .display-none {
+  display: none; }
+
+@media only screen and (max-width: 480px) {
+  #header > div {
+    background-image: url("/public/images/system/common/mobileHeader.png"); }
+
+  #header div > img {
+    width: 5%;
+    position: relative;
+    left: 9%;
+    height: 65%; }
+
+  #header div div img {
+    height: 83%;
+    margin-right: 0;
+    width: 24%;
+    padding-top: 0;
+    border-radius: 5px;
+    position: static; }
+
+  #header div div {
+    width: 45%;
+    height: 45px;
+    padding-top: 1.5%; }
+
+  #header div div p {
+    margin-top: 10%;
+    width: 73%;
+    margin-right: 0px; }
+
+  #header ul {
+    position: absolute;
+    right: 3%;
+    top: 98%;
+    width: 30%; } }
+/*======================================= Navigation CSS ========================================================*/
+#nav {
+  background-color: black; }
+
+#nav > div > ul > li {
+  display: inline; }
+
+#nav > div a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5%;
+  text-transform: uppercase; }
+
+#nav > div > ul > li > ul {
+  display: none; }
+
+#nav > div img {
+  display: none; }
+
+#nav .display-block {
+  display: block; }
+
+#nav .display-none {
+  display: none; }
+
+#nav > div > ul li:hover {
+  background: #474747; }
+
+@media screen and (min-width: 480px) {
+  #nav {
+    width: 100%;
+    background-color: black; }
+
+  #nav > div > ul {
+    height: 2.5em;
+    margin-left: 15%;
+    background-color: #252525;
+    padding-left: 0; }
+
+  #nav > div > ul > li > a {
+    display: block;
+    /*--To remove skew from text--*/
+    -webkit-transform: skew(-150deg);
+    /* Safari and Chrome */
+    -o-transform: skew(-150deg);
+    /* Opera */
+    -moz-transform: skew(-150deg);
+    /* Firefox */
+    transform: skew(-150deg); }
+
+  #nav > div > ul > li {
+    float: left;
+    padding-top: 0.5%;
+    font-size: 0.825em;
+    height: 100%;
+    box-sizing: border-box;
+    margin-left: 1%;
+    width: 15%;
+    text-align: center;
+    background-color: #252525;
+    -webkit-transform: skew(150deg);
+    /* Safari and Chrome */
+    -o-transform: skew(150deg);
+    /* Opera */
+    -moz-transform: skew(150deg);
+    /* Firefox */
+    transform: skew(150deg); }
+
+  #nav > div > ul > li:hover {
+    background: #474747;
+    border-bottom: 2px solid red; }
+
+  #nav > div > ul > li:hover ul {
+    display: inline; }
+
+  #nav > div > ul > li > ul {
+    z-index: 1;
+    background-color: #373737;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    /*--To remove skew from text--*/
+    -webkit-transform: skew(30deg);
+    /* Safari and Chrome */
+    -o-transform: skew(30deg);
+    /* Opera */
+    -moz-transform: skew(30deg);
+    /* Firefox */
+    transform: skew(30deg); }
+
+  #nav > div > ul > li > ul > li {
+    list-style-type: none; }
+
+  #nav > div > ul > li:hover ul {
+    display: inline-block; }
+
+  #nav > div > ul > li > ul > li > a {
+    display: block;
+    width: 87%;
+    text-align: center; }
+
+  #nav > div > ul > li > ul > li:hover {
+    display: block;
+    background-color: red;
+    width: 100%;
+    text-align: center; } }
+@media only screen and (max-width: 480px) {
+  #nav {
+    background-image: url("/public/images/system/common/mobileHeaderNav2.gif");
+    height: 60px; }
+
+  #nav > div ul {
+    display: none; }
+
+  #nav > div > img {
+    display: block;
+    float: right;
+    margin-top: 5%;
+    margin-right: 6%;
+    z-index: 2; }
+
+  #nav > div > ul img {
+    display: block;
+    float: right;
+    position: relative;
+    right: 0; }
+
+  #nav > div > ul {
+    z-index: 1;
+    position: relative;
+    top: 47px;
+    width: 100%;
+    background-color: #353535; }
+
+  #nav > div > ul > li {
+    display: block;
+    padding: 4px; }
+
+  #nav > div a {
+    padding: 0;
+    margin-left: 10px; } }
+/*========================================== Footer CSS =======================================================*/
+#footerSection {
+  clear: both;
+  border-bottom: 7px solid red;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+#footerSection p {
+  color: #FFFFFF;
+  text-align: left; }
+
+/*Media Query for mobile version*/
+@media screen and (max-width: 480px) {
+  #footerSection p {
+    text-align: center; } }
+/*======= CSS for Left Pannel ======*/
+#leftPanel {
+  margin-left: 0;
+  margin-top: 10px;
+  float: left;
+  content: "";
+  clear: both; }
+  #leftPanel > img {
+    display: flex; }
+    #leftPanel > img ~ ul ~ div {
+      display: none; }
+  #leftPanel #carousel {
+    width: 87%;
+    margin-top: 10px;
+    content: "";
+    clear: both;
+    height: 10em;
+    position: relative;
+    overflow: hidden; }
+  #leftPanel #carouselControls {
+    background-image: none;
+    background-color: #da2627;
+    width: 87%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    word-wrap: break-word;
+    height: 32px;
+    padding-bottom: 4px;
+    font-size: 1em;
+    text-align: center;
+    color: #d1d1d1;
+    padding-top: 5px;
+    content: ""; }
+    #leftPanel #carouselControls button {
+      background-color: #da2627;
+      border: 0;
+      cursor: pointer;
+      float: left; }
+    #leftPanel #carouselControls .arrowButton {
+      outline: 0;
+      width: 30px; }
+    #leftPanel #carouselControls #arrowButtonRight {
+      float: right; }
+  #leftPanel ul {
+    list-style-type: none;
+    background-color: #da2627;
+    width: 87%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    word-wrap: break-word; }
+    #leftPanel ul > li {
+      margin: 0;
+      padding-top: 15px;
+      color: #d1d1d1;
+      font-size: 1.151em;
+      padding-left: 8px; }
+      #leftPanel ul > li ~ li {
+        margin-top: 3px;
+        padding-top: 15px;
+        color: #d1d1d1;
+        font-size: 0.935em;
+        padding-left: 8px; }
+        #leftPanel ul > li ~ li ~ li ~ li ~ li {
+          padding-bottom: 30px; }
+  #leftPanel > ul ~ div > ol {
+    height: 10em;
+    position: absolute; }
+  #leftPanel ol li {
+    float: left;
+    height: 100%; }
+    #leftPanel ol li img {
+      width: 100%;
+      height: 100%; }
+
+/*======= CSS for Filter ======*/
+#filter #filter-title {
+  background-color: #da2627;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 20px 10px 10px 20px;
+  box-sizing: border-box;
+  width: 94%; }
+#filter .filter-content > hr {
+  border-width: 1px;
+  width: 100%; }
+#filter input[type=checkbox] {
+  width: 28px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.3; }
+#filter .filter-content {
+  background-color: #000000;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: #808080;
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 94%; }
+  #filter .filter-content > ul {
+    list-style-position: outside;
+    padding-left: 0; }
+    #filter .filter-content > ul li {
+      list-style-type: none;
+      font-size: small;
+      margin-top: 7%; }
+  #filter .filter-content > h3 {
+    font-family: SapientCentroSlab-XThin;
+    color: #dfdfdf; }
+
+@media only screen and (max-width: 480px) {
+  #filter {
+    display: none; } }
+/*======= CSS for Custom Radio ======*/
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  color: #dfdfdf;
+  cursor: pointer; }
+
+input[type="checkbox"] + label span {
+  padding-left: 1.2em;
+  color: #FFF;
+  float: left;
+  display: inline-block;
+  height: 18px;
+  margin: -3px 8px 5px 0px;
+  border: 1px solid white;
+  /*vertical-align:middle;*/
+  cursor: pointer;
+  -moz-border-radius: 0%;
+  border-radius: 0%; }
+
+input[type="checkbox"] + label span {
+  background-color: transparent; }
+
+input[type="checkbox"]:checked + label span {
+  background-image: url("http://photo.mylife.com/photos/000/400/143M.jpg");
+  background-size: 2px; }
+
+/*======= CSS for Admin Dashboard ======*/
+#adminDashboard {
+  min-height: 500px;
+  float: left; }
+  #adminDashboard #leftPanel > img ~ ul ~ div {
+    display: table; }
+  #adminDashboard > div {
+    margin-top: 30px;
+    margin-left: 17%;
+    height: 58px;
+    width: 69%;
+    text-align: center;
+    border-bottom: 1px solid #d1d1d1; }
+  #adminDashboard h1 {
+    font-family: SapientCentroSlab-XThin;
+    margin-top: 4.2%;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 1.589em; }
+  #adminDashboard h2 {
+    font-family: SapientCentroSlab-XThin;
+    font-weight: lighter;
+    font-size: 1.589em;
+    letter-spacing: 2px;
+    color: lightgray; }
+  #adminDashboard h3 {
+    font-family: SapientCentroSlab-XThin;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 1%;
+    letter-spacing: 2px;
+    color: lightgray; }
+  #adminDashboard span {
+    display: none;
+    word-wrap: break-word; }
+  #adminDashboard .col-8 {
+    float: left; }
+  #adminDashboard hr {
+    margin: 2% 0 0 14%;
+    width: 51%;
+    color: dimgray; }
+  #adminDashboard #services {
+    margin: 2% 0 2% 2%;
+    float: left;
+    color: lightgray;
+    width: 98%;
+    list-style-type: none; }
+  #adminDashboard #services li {
+    padding: 25px 0 21px 0;
+    width: 30%;
+    display: inline-block;
+    text-align: center; }
+  #adminDashboard .img {
+    width: 35%;
+    border-radius: 200px; }
+  #adminDashboard .noOfDevicesBtn, #adminDashboard .allocatedBtn, #adminDashboard .availDeviceBtn,
+  #adminDashboard .lostDeviceBtn, #adminDashboard .upcomingBtn,
+  #adminDashboard .damagedDeviceBtn, #adminDashboard .unusedDeviceBtn, #adminDashboard .pendingDeviceBtn,
+  #adminDashboard .queueDeviceBtn {
+    background-color: #da2627;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    width: 33%;
+    padding: 2px;
+    display: inline-block; }
+  #adminDashboard li:hover {
+    background: rgba(255, 255, 255, 0.2); }
+  #adminDashboard #services li p {
+    font-family: SapientCentroSlab-XThin;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 1.3em;
+    letter-spacing: 1px; }
+  #adminDashboard #services a {
+    color: #d1d1d1; }
+  @media only screen and (max-width: 480px) {
+    #adminDashboard #leftPanel {
+      display: none; }
+    #adminDashboard span {
+      font-family: SapientCentroSlab-XThin;
+      display: inline-block;
+      margin-left: 5%; }
+    #adminDashboard h1 {
+      margin-bottom: 5%; }
+    #adminDashboard div {
+      display: none; }
+    #adminDashboard #services li {
+      width: 95%; }
+    #adminDashboard #services li .img {
+      float: left;
+      width: 22%; }
+    #adminDashboard .btn1, #adminDashboard .btn2, #adminDashboard .btn3, #adminDashboard .btn4,
+    #adminDashboard .btn5, #adminDashboard .btn6, #adminDashboard .btn7, #adminDashboard .btn8, #adminDashboard .btn9 {
+      width: 26%;
+      padding: 6px; } }
+
+/*======= CSS for Add Device ======*/
+.addDev #leftPanel > ul ~ div {
+  display: none; }
+
+#addDevice section, #lostDevice section {
+  background-color: #424242;
+  border-radius: 0.313em;
+  margin-top: 0.313em; }
+
+.addDev label {
+  display: none; }
+
+#addDevice > h1 ~ section > form > div {
+  color: #979797;
+  font-size: medium;
+  margin: 2.188em 0.625em 0.625em 0.625em;
+  clear: both;
+  display: table; }
+#addDevice div {
+  color: #979797;
+  margin: 0.875em 0 0 0; }
+#addDevice dl {
+  margin: 0 0 0.625em 5.5em; }
+#addDevice dd {
+  position: relative; }
+#addDevice label.error {
+  display: block; }
+
+#lostDevice label.error {
+  display: block; }
+
+#addDevice dt {
+  background: url(/public/images/system/arrow.png) no-repeat scroll right center;
+  display: block;
+  padding-right: 1.250em;
+  border: 1px solid #969696;
+  width: 8.5em;
+  display: block;
+  padding: 0.438em; }
+#addDevice dd ul {
+  background-color: #424242;
+  border: 1px solid #969696;
+  color: #969696;
+  display: none;
+  padding: 0.313em 0;
+  position: absolute;
+  top: 0.125em;
+  width: 8.5em;
+  list-style: none; }
+  #addDevice dd ul li {
+    padding: 0.250em;
+    display: block;
+    background-color: #424242; }
+#addDevice input[type="submit"] {
+  font-size: medium;
+  width: 43%;
+  margin: 2.5em 0 4em 0; }
+#addDevice form {
+  margin-left: 0.938em;
+  padding: 0; }
+
+#lostDevice form {
+  margin-left: 0.938em;
+  padding: 0; }
+
+#addDevice input[type="text"] {
+  padding: 1.7em 0 0.5em 0.5em;
+  width: 58%;
+  font-size: medium; }
+
+#lostDevice input[type="text"] {
+  padding: 1.7em 0 0.5em 0.5em;
+  width: 58%;
+  font-size: medium; }
+#lostDevice input[type="submit"] {
+  font-size: medium;
+  margin: 14em 0 3em 0;
+  width: 43%; }
+
+#addDevice .select-wrap div {
+  display: inline-block; }
+#addDevice .label-to-appear {
+  color: #979797;
+  font-size: medium;
+  margin-right: 6%; }
+
+.selectMenu {
+  margin-top: 20px;
+  margin-left: 2%; }
+
+@media only screen and (max-width: 30em) {
+  #addDevice input[type="text"], #lostDevice input[type="text"], #addDevice input[type="submit"], #lostDevice input[type="submit"] {
+    width: 95%; }
+
+  .ui-state-default {
+    margin-top: 10px; } }
+/*======= CSS for Device History ======*/
+#deviceHistory #content ul li {
+  width: 100%; }
+#deviceHistory .heading {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+#deviceHistory label {
+  display: none; }
+#deviceHistory #search {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #373737;
+  color: #bdbdbd;
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  outline: 0;
+  width: 90%; }
+#deviceHistory input::-webkit-input-placeholder {
+  -webkit-input-placeholder: left;
+  -moz-input-placeholder: left;
+  -ms-input-placeholder: left;
+  text-align: left; }
+#deviceHistory #availableDevices > li {
+  float: left;
+  color: #ffffff; }
+#deviceHistory .head-row {
+  background-color: #373737;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #bdbdbd;
+  float: left;
+  padding: 10px 0 10px 0;
+  width: 100%; }
+  #deviceHistory .head-row > li div {
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-word; }
+#deviceHistory #availableDevices > li div {
+  display: inline-block;
+  line-height: 2;
+  margin-right: 0;
+  word-wrap: break-word; }
+#deviceHistory #availableDevices > li > div:first-child {
+  padding-left: 4%; }
+#deviceHistory .asset-details {
+  width: 97%;
+  margin-left: 3%; }
+#deviceHistory .head-row div:nth-child(3) {
+  text-align: left;
+  padding-left: 3%;
+  width: 35%; }
+#deviceHistory .head-row div:last-child {
+  padding-left: 4%;
+  width: 11%; }
+#deviceHistory .image-div {
+  width: 12%;
+  margin-top: 18px; }
+  #deviceHistory .image-div > div {
+    border-radius: 15px;
+    zoom: 0.7; }
+#deviceHistory .span-text span {
+  font-size: 10px;
+  padding: 2px 3px;
+  color: #40CD3E;
+  border: 1px solid #808080; }
+#deviceHistory #innerDiv {
+  display: none;
+  width: 98%;
+  padding-left: 2%;
+  margin-right: 0;
+  background-color: #3d3d3d;
+  padding-bottom: 19px; }
+  #deviceHistory #innerDiv h2 {
+    padding-top: 1%;
+    margin: 0; }
+  #deviceHistory #innerDiv .deviceHistoryData {
+    width: 100%; }
+#deviceHistory #availableDevices .minus-button {
+  display: none; }
+#deviceHistory main .display-block {
+  display: block; }
+#deviceHistory .desktopHide {
+  display: none; }
+#deviceHistory li:nth-child(even) {
+  background-color: #424242; }
+#deviceHistory li:nth-child(odd) {
+  background-color: #3d3d3d; }
+#deviceHistory .deviceHistoryData {
+  width: 100%; }
+
+/*=====================
+Media Query for mobile version
+=======================*/
+@media screen and (max-width: 480px) {
+  #deviceHistory h1 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0; }
+  #deviceHistory #content ul li {
+    width: 98%; }
+  #deviceHistory .desktopHide {
+    display: block;
+    float: left; }
+  #deviceHistory .mob-col-10 {
+    padding-left: 2%; }
+  #deviceHistory .mob-to-right {
+    margin-left: 34%; }
+  #deviceHistory #availableDevices > li > div {
+    padding-left: 2%; }
+    #deviceHistory #availableDevices > li > div:first-child {
+      padding-left: 2%; }
+  #deviceHistory .image-div {
+    float: right;
+    position: relative;
+    width: 6%;
+    right: 13%;
+    margin-top: 0; }
+  #deviceHistory .asset-details {
+    margin-left: 0; } }
+/*======= CSS for Light Box ======*/
+#lightBox #popup {
+  width: 40%; }
+
+#lightBox .popup-opaque {
+  border: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000;
+  left: 0;
+  bottom: 0;
+  z-index: 11; }
+
+#lightBox .popup-heading {
+  border: none;
+  color: #b8b8b8;
+  position: absolute;
+  border-radius: 10px;
+  top: 20%;
+  left: 32%;
+  z-index: 11; }
+
+#lightBox .popup-heading h2 {
+  border: none;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  background-color: #1b1a1a;
+  font-family: "Sapient Centro Slab"; }
+
+#lightBox .popup-data {
+  border: none;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  background-color: #2a2a2a;
+  font-family: "Sapient Centro Slab"; }
+
+#lightBox .popup-data p {
+  font-family: "Sapient Centro Slab";
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: justify; }
+
+#lightBox .popup-bold {
+  font-weight: bold;
+  color: #fbfbfb;
+  font-size: 115%;
+  margin: 10px 0; }
+
+#lightBox .popup-data ul {
+  padding-left: 15px; }
+
+#lightBox .popup-data ul li {
+  padding: 7px;
+  list-style-type: disc; }
+
+/*.popup-button*/
+#lightBox .popup-data input[type="button"] {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  width: 58%;
+  padding: 10px 0 10px 0;
+  background-color: #da2627;
+  margin: 20px 22%;
+  color: #fff; }
+
+/*======= CSS for Manage Devices ======*/
+/**
+* NAME OF THE STYLESHEET (manageDevice.css)
+* The styles in this file represent styles for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    SHOBHIT SINGH, SapientNitro <ssingh239@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*
+*
+*
+*/
+#manageDevice #content ul li {
+  width: 98%; }
+#manageDevice .heading {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+#manageDevice #search {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #373737;
+  color: #bdbdbd;
+  float: right;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  outline: 0;
+  width: 90%; }
+#manageDevice #availableDevices > li {
+  float: left;
+  color: #ffffff; }
+#manageDevice .head-row {
+  background-color: #373737;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #bdbdbd;
+  float: left;
+  width: 100%;
+  padding: 10px 0; }
+  #manageDevice .head-row > li div {
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-word; }
+#manageDevice #availableDevices > li div {
+  display: inline-block;
+  line-height: 2;
+  margin-right: 0;
+  word-wrap: break-word; }
+#manageDevice #availableDevices > li > div:first-child {
+  padding-left: 4%; }
+#manageDevice .head-row div:nth-child(3) {
+  text-align: left;
+  padding-left: 3%;
+  width: 35%; }
+#manageDevice .head-row div:last-child {
+  padding-left: 4%;
+  width: 15%; }
+#manageDevice .image-div {
+  float: right;
+  position: absolute;
+  width: 6%; }
+#manageDevice .delete, #manageDevice .edit {
+  display: inline-block;
+  position: relative;
+  left: 20%;
+  top: 13px; }
+#manageDevice main .display-block {
+  display: block; }
+#manageDevice main section .display-table {
+  display: table; }
+#manageDevice #availableDevices > li:nth-child(even) {
+  background-color: #424242; }
+#manageDevice #availableDevices > li:nth-child(odd) {
+  background-color: #3d3d3d; }
+#manageDevice label, #manageDevice #searchSmall, #manageDevice .hidden, #manageDevice main .display-none, #manageDevice .desktopHide {
+  display: none; }
+#manageDevice::-webkit-input-placeholder, #manageDevice::-moz-placeholder, #manageDevice:-ms-input-placeholder {
+  text-align: right; }
+
+@media only screen and (max-width: 30em) {
+  #manageDevice #searchSmall {
+    display: block;
+    font-size: 16px;
+    background: transparent;
+    border: 0;
+    color: #bdbdbd;
+    margin-top: 15px;
+    border-bottom: 2px solid #3d3d3d;
+    outline: 0; }
+  #manageDevice h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0; }
+  #manageDevice .desktopHide {
+    display: block;
+    float: left; }
+  #manageDevice .small-view-odd, #manageDevice .small-view-even {
+    color: #FFF;
+    display: inline-block;
+    float: left;
+    padding: 5px 0; }
+  #manageDevice .small-view-odd {
+    background-color: #3d3d3d;
+    width: 94%; }
+  #manageDevice .small-view-even {
+    background-color: #424242;
+    width: 94%; }
+  #manageDevice .mob-col-10 {
+    padding-left: 2%; }
+  #manageDevice .mob-to-right {
+    margin-left: 34%; }
+  #manageDevice #availableDevices > li > div:first-child {
+    padding-left: 2%; }
+  #manageDevice .delete, #manageDevice .edit {
+    top: 36px; }
+  #manageDevice #content {
+    margin-bottom: 20px; } }
+/*======= CSS for Navigation ======*/
+.navigation {
+  background-color: black; }
+
+.main-menu {
+  display: inline; }
+
+.navigation li a {
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.List-2 {
+  display: none; }
+
+.dropDown {
+  display: none; }
+
+#button {
+  float: right;
+  margin-top: 5%;
+  margin-right: 6%;
+  z-index: 2; }
+
+/*--Media Query for mobile version--*/
+@media screen and (max-width: 480px) {
+  #navAfter480 {
+    display: none; }
+
+  #navBefore480 ul {
+    display: none; }
+
+  #navBefore480 a {
+    color: white; }
+
+  #nav {
+    background-image: url("/public/images/system/common/mobileHeaderNav2.gif");
+    height: 47px; }
+
+  #List-3 ul {
+    display: none; }
+
+  .main-menu {
+    display: block; }
+
+  #navBefore480 ul {
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    z-index: 1; }
+
+  #navBefore480 ul ul {
+    position: static; }
+
+  #navBefore480 {
+    width: 100%;
+    background-color: #2f2f2f; }
+
+  #navBefore480 div ul li {
+    display: block; }
+
+  #navBefore480 .dropDown {
+    display: inline; }
+
+  #navBefore480 .main-menu:hover {
+    background-color: red; }
+
+  #navBefore480 #dropDown {
+    display: inline; }
+
+  #navBefore480 .sub-menu:hover {
+    background-color: red; } }
+/*--Media Query for desktop version--*/
+@media screen and (min-width: 480px) {
+  #navBefore480 {
+    display: none; }
+
+  .navigation {
+    width: 99%;
+    background-color: black; }
+
+  .List-1 {
+    margin-left: 20%;
+    background-color: #373737;
+    height: 2.5em;
+    -webkit-transform: skew(150deg);
+    /* Safari and Chrome */
+    -o-transform: skew(150deg);
+    /* Opera */
+    -moz-transform: skew(150deg);
+    /* Firefox */
+    transform: skew(150deg); }
+
+  .main-menu > a {
+    display: block;
+    /*--To remove skew from text--*/
+    -webkit-transform: skew(-150deg);
+    /* Safari and Chrome */
+    -o-transform: skew(-150deg);
+    /* Opera */
+    -moz-transform: skew(-150deg);
+    /* Firefox */
+    transform: skew(-150deg); }
+
+  .main-menu {
+    float: left;
+    padding-top: 6px;
+    height: 80%;
+    width: 15%;
+    text-align: center;
+    background-color: #373737; }
+
+  .main-menu:hover {
+    background: #474747;
+    border-bottom: 2px solid red; }
+
+  .List-1 ul li:hover ul {
+    display: inline; }
+
+  .List-2 {
+    background-color: #373737;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0; }
+
+  .List-2 {
+    background-color: #373737;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+    /*--To remove skew from text--*/
+    -webkit-transform: skew(30deg);
+    /* Safari and Chrome */
+    -o-transform: skew(30deg);
+    /* Opera */
+    -moz-transform: skew(30deg);
+    /* Firefox */
+    transform: skew(30deg); }
+
+  .List-2 li {
+    list-style-type: none; }
+
+  .List-1 li:hover ul {
+    display: inline-block; }
+
+  .sub-menu a {
+    display: block;
+    width: 87%;
+    text-align: center; }
+
+  .sub-menu:hover {
+    display: block;
+    background-color: red;
+    width: 100%;
+    text-align: center; } }
+/*======= CSS for Profile ======*/
+#myProfile .edit-content {
+  display: inline-block;
+  position: relative;
+  left: 59%; }
+#myProfile .edit-field {
+  position: relative;
+  right: 4%; }
+#myProfile .error {
+  display: block;
+  padding: 1%; }
+#myProfile section {
+  background-color: #424242;
+  border-radius: 0.313em;
+  margin-top: 0.313em;
+  display: block; }
+#myProfile label {
+  display: none; }
+#myProfile input[type="submit"] {
+  font-size: medium;
+  width: 43%;
+  margin: 2.5em 0 4em 0; }
+#myProfile form {
+  margin-left: 0.938em;
+  padding: 0; }
+#myProfile input[type="text"], #myProfile input[type="password"] {
+  padding: 1.7em 0 0.5em 0.5em;
+  width: 58%;
+  font-size: medium; }
+
+@media only screen and (max-width: 30em) {
+  #myProfile input[type="text"], #myProfile input[type="password"], #myProfile input[type="submit"] {
+    width: 80%; }
+  #myProfile .edit-content {
+    display: inline-block;
+    position: relative;
+    left: 82%; }
+  #myProfile .edit-field {
+    position: relative;
+    right: 6%; } }
+/*======= CSS for Login ======*/
+/**
+* NAME OF THE STYLESHEET (login.css)
+* The styles in this file represent styles for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    SHOBHIT SINGH, SapientNitro <ssingh239@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*
+*
+*
+*/
+/*============================  container ======================*/
+#login {
+  display: block; }
+  #login .like-a-button {
+    display: inline-block;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 7px;
+    width: 71%;
+    height: 46px;
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 1.2em;
+    border: 1px solid transparent;
+    appearance: button;
+    -moz-appearance: button;
+    -webkit-appearance: button;
+    color: #808080;
+    padding: 2px 8px; }
+  #login .login-container {
+    position: relative;
+    margin-bottom: 32px;
+    margin-top: 9px; }
+  #login section {
+    position: relative;
+    margin-top: 150px;
+    display: table; }
+  #login .sprite {
+    display: inline-block; }
+    #login .sprite.usernameIcon {
+      position: absolute;
+      margin-top: 24px; }
+    #login .sprite.username {
+      position: absolute;
+      margin-top: 24px;
+      background-position: 0 -5114px;
+      width: 20px;
+      height: 20px; }
+  #login #heading {
+    margin-top: 47px;
+    display: table-cell; }
+  #login h2 {
+    color: #FFF;
+    font-size: 1.8em; }
+  #login label.error {
+    display: inline-block;
+    margin-top: 4px; }
+  #login h1 {
+    font-size: 3.71em;
+    margin-top: 42px;
+    font-weight: lighter; }
+    #login h1 span {
+      padding-right: 44%; }
+  #login .login-hidden {
+    display: none; }
+  #login .form {
+    display: table-cell; }
+  #login .color-red {
+    color: red; }
+  #login #mainHeadingDiv {
+    letter-spacing: 4px; }
+  #login #rememberDiv {
+    width: 75%;
+    padding-top: 36px;
+    padding-bottom: 15px; }
+  #login .form-input {
+    width: 67%;
+    font-size: 1.2em;
+    padding-left: 8%;
+    padding-bottom: 2px; }
+  #login input {
+    margin-top: 7%; }
+  #login #containerHr {
+    clear: both;
+    width: 75%; }
+    #login #containerHr span {
+      padding-left: 6%;
+      color: #FFF;
+      float: left; }
+  #login form span {
+    padding-left: 1.2em;
+    color: #FFF;
+    float: left; }
+  #login .primary-button {
+    width: 75%;
+    font-size: 1.2em; }
+  #login #hrLeft, #login #hrRight {
+    width: 40%; }
+
+@media only screen and (max-width: 30em) {
+  #login #heading {
+    margin-top: 0; }
+  #login #logoImage {
+    margin-left: 32%; }
+  #login #mainHeadingDiv {
+    margin-left: 10%;
+    margin-top: 20px; }
+  #login h1 span {
+    padding-right: 0; }
+  #login h2 {
+    padding-left: .5em;
+    font-size: 1.4em; }
+  #login h1 {
+    font-size: 1.7em;
+    margin: 0; }
+  #login .form {
+    position: relative;
+    left: 7%; }
+    #login .form #loginForm {
+      margin-top: 10%;
+      font-size: 1.2em; }
+  #login input {
+    margin-left: 3%;
+    margin-top: 30px; }
+  #login #containerHr {
+    clear: both;
+    margin-left: 3%;
+    height: 1em;
+    width: 75%; }
+  #login #hrLeft {
+    width: 41%; }
+  #login #containerHr span {
+    padding-left: 5%;
+    color: #FFF;
+    float: left; }
+  #login #hrRight {
+    width: 40%; }
+  #login form span {
+    padding-left: 20px;
+    color: #FFF;
+    float: left; }
+  #login #rememberDiv {
+    margin-left: 5%; }
+    #login #rememberDiv label span {
+      float: left; }
+  #login .sprite.logosapient {
+    margin: 0 auto; }
+  #login .sprite.usernameIcon, #login .sprite.username {
+    margin-left: 3%;
+    top: 7px; }
+  #login section {
+    margin-top: 10px; }
+  #login .like-a-button {
+    margin-left: 1%;
+    height: 52px; } }
+/*======= CSS for Sign Up ======*/
+/**
+* NAME OF THE STYLESHEET (signUp.css)
+* The styles in this file represent styles for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    SHOBHIT SINGH, SapientNitro <ssingh239@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*/
+/*=========== Variables for Left Panel ===========*/
+#signUp main {
+  display: block; }
+#signUp section {
+  position: relative;
+  margin-top: 120px;
+  display: table; }
+#signUp #heading {
+  margin-top: 47px;
+  display: table-cell; }
+#signUp .form {
+  display: table-cell; }
+#signUp h2 {
+  color: #FFF;
+  font-size: 1.8em; }
+#signUp h1 {
+  font-size: 3.71em;
+  margin-top: 42px;
+  font-weight: lighter; }
+  #signUp h1 span {
+    padding-right: 44%; }
+#signUp #mainHeadingDiv {
+  letter-spacing: 4px; }
+#signUp .form-input {
+  width: 70%;
+  font-size: 1.2em;
+  padding-left: 6%; }
+#signUp .primary-button {
+  width: 75%;
+  font-size: 1.2em; }
+#signUp input {
+  margin-top: 6%; }
+#signUp label.error {
+  display: block;
+  margin-top: 5px; }
+
+/*=====================
+Media Query for mobile devices
+=======================*/
+@media only screen and (max-width: 480px) {
+  #signUp #heading {
+    margin-top: 0; }
+  #signUp #logoImg {
+    margin-left: 32%; }
+  #signUp #mainHeadingDiv {
+    margin-left: 10%;
+    margin-top: 20px; }
+  #signUp h1 span {
+    padding-right: 0; }
+  #signUp h2 {
+    padding-left: .5em;
+    font-size: 1.4em; }
+  #signUp h1 {
+    font-size: 1.7em;
+    margin: 0; }
+  #signUp .form {
+    position: relative;
+    left: 9%; }
+    #signUp .form #loginForm {
+      margin-top: 10%;
+      font-size: 1.2em; }
+  #signUp input {
+    margin-left: 3%;
+    margin-top: 30px; }
+  #signUp .sprite.logosapient {
+    margin: 0 auto; }
+  #signUp .form-input {
+    width: 88%; }
+  #signUp .primary-button {
+    width: 94%; }
+  #signUp section {
+    margin-top: 10px; } }
+/*======= CSS for Forgot Password ======*/
+/**
+* NAME OF THE STYLESHEET (admin.css)
+* The styles in this file represent styles for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    SHOBHIT SINGH, SapientNitro <ssingh239@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*
+*
+*
+*/
+/*============================  sapient logo image ========================*/
+#forgetPassword main {
+  display: table; }
+
+#forgetPassword section {
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle; }
+
+#forgetPassword h2 {
+  color: #FFF;
+  font-size: 1.8em; }
+
+#forgetPassword h1 {
+  font-size: 3.71em;
+  margin-top: 42px;
+  font-weight: lighter; }
+
+#forgetPassword h1 span {
+  padding-right: 44%; }
+
+#forgetPassword #mainHeadingDiv {
+  width: 100%;
+  letter-spacing: 4px; }
+
+#forgetPassword .form-input {
+  width: 70%;
+  font-size: 1.2em;
+  padding-left: 6%; }
+
+#forgetPassword .primary-button {
+  width: 75%;
+  font-size: 1.2em; }
+
+#forgetPassword input {
+  margin-top: 7%; }
+
+#forgetPassword .login-hidden {
+  display: none; }
+
+#forgetPassword form span {
+  padding-left: 1.2em;
+  color: #FFF;
+  float: left; }
+
+@media only screen and (max-width: 30em) {
+  #forgetPassword #heading {
+    margin-top: 0;
+    position: relative;
+    top: -220px; }
+
+  #forgetPassword #logoImg {
+    margin-left: 32%; }
+
+  #forgetPassword #mainHeadingDiv {
+    margin-left: 10%;
+    margin-top: 20px; }
+
+  #forgetPassword h1 span {
+    padding-right: 0; }
+
+  #forgetPassword h2 {
+    padding-left: .5em;
+    font-size: 1.4em; }
+
+  #forgetPassword h1 {
+    font-size: 1.7em;
+    margin: 0; }
+
+  #forgetPassword .form #forgetPasswordForm {
+    margin-top: 10%;
+    font-size: 1.2em; }
+
+  #forgetPassword a {
+    margin-right: 49%;
+    color: #2e60a5;
+    float: left;
+    margin-top: 10px; }
+
+  #forgetPassword input {
+    margin-left: 3%;
+    margin-top: 30px; }
+
+  #forgetPassword form span {
+    padding-left: 20px;
+    color: #FFF;
+    float: left; }
+
+  #forgetPassword .sprite.logosapient {
+    margin: 0 auto; } }
+/*======= CSS for Upcoming Devices ======*/
+/*
+* NAME OF THE STYLESHEET (upcomingDevice.scss)
+* The styles in this file represent styles for the Upcoming Device page for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    PLAVIKA SINGH, SapientNitro <psingh122@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*
+*
+*/
+#upcomingDev #leftPanel > ul ~ div {
+  display: none; }
+
+#upcomingDevice {
+  background-color: #424242;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 5px; }
+
+/* To hide labels*/
+#upcomingDevice .label-hidden {
+  display: none; }
+
+#upcomingDevice label.error {
+  display: block;
+  margin-top: 5px;
+  margin-left: 2%; }
+
+#upcomingDevice input[type="text"] {
+  padding-left: 3%;
+  margin-top: 35px;
+  font-size: medium;
+  margin-left: 2%;
+  width: 60%; }
+
+#upcomingDevice input[type="submit"] {
+  font-size: medium;
+  margin: 30px 0 100px 2%;
+  width: 40%; }
+
+#upcomingDevice div {
+  margin-bottom: 8px; }
+
+#upcomingDevice .label-to-appear {
+  color: #979797;
+  font-size: medium;
+  margin-right: 6%; }
+
+.selectMenu {
+  margin-top: 20px;
+  margin-left: 2%; }
+
+#browserDropBox {
+  color: #979797;
+  background-color: #424242;
+  width: 100px;
+  padding: 4px;
+  font-size: medium; }
+
+.ui-menu .ui-menu-item, .ui-state-default, .ui-state-focus {
+  background: #424242;
+  border-radius: 0;
+  color: #979797;
+  outline: 0; }
+
+.ui-menu-item .ui-state-focus, .ui-widget-content .ui-state-hover, .ui-widget-content .ui-state-focus {
+  background: #3faad1;
+  color: #ffffff; }
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+  background-image: url("/public/javascripts/vendor/jquery-ui-1.11.4.custom/images/ui-icons_888888_256x240.png"); }
+
+/*=====================
+Media Query for small version
+=======================*/
+@media only screen and (max-width: 480px) {
+  #upcomingDevice input[type="text"], #upcomingDevice input[type="submit"], #browserDropBox {
+    width: 90%; }
+
+  .ui-state-default {
+    margin-top: 10px; } }
+/*======= CSS for Asset Request Admin Devices ======*/
+/*
+* NAME OF THE STYLESHEET (manageDevice.css)
+* The styles in this file represent styles for the Manage Device  and Asset Request page for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    PLAVIKA SINGH, SapientNitro <psingh122@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*
+*
+*
+*/
+/*-----------------------------------------   ASSET  REQUEST PAGE STARTS HERE---------------------------*/
+#assetRequest #content ul li {
+  width: 100%; }
+
+#assetRequest .heading {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+/*To hide labels*/
+#assetRequest label {
+  display: none; }
+
+#assetRequest #search {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #373737;
+  color: #bdbdbd;
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  outline: 0;
+  width: 90%; }
+
+#assetRequest ::-webkit-input-placeholder, #assetRequest ::-moz-placeholder, #assetRequest :-ms-input-placeholder {
+  text-align: left; }
+
+#assetRequest #availableDevices > li {
+  float: left;
+  color: #ffffff; }
+
+#assetRequest .head-row {
+  background-color: #373737;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #bdbdbd;
+  float: left;
+  padding: 10px 0 10px 0;
+  width: 100%; }
+
+#assetRequest .head-row > li div {
+  display: inline-block;
+  text-align: center;
+  word-wrap: break-word; }
+
+#assetRequest #availableDevices > li div {
+  display: inline-block;
+  line-height: 2;
+  margin-right: 0;
+  word-wrap: break-word; }
+
+#assetRequest #availableDevices > li > div:first-child {
+  padding-left: 4%; }
+
+#assetRequest .head-row div:nth-child(3) {
+  text-align: left;
+  padding-left: 3%;
+  width: 35%; }
+
+#assetRequest .head-row div:last-child {
+  padding-left: 4%;
+  width: 15%; }
+
+#assetRequest .image-div {
+  float: right;
+  position: absolute;
+  width: 6%; }
+
+#assetRequest .span-text span {
+  font-size: 10px;
+  padding: 2px 3px;
+  color: #40CD3E;
+  border: 1px solid #808080; }
+
+#assetRequest #not-available span {
+  color: #ff0000;
+  margin-left: 0; }
+
+#assetRequest .request-button-pending {
+  background-color: #2D6A87;
+  border: 0;
+  border-radius: 2px;
+  color: #ffffff;
+  margin-top: 5px;
+  font-size: x-small;
+  padding: 5px;
+  outline: 0; }
+
+#assetRequest #innerDiv {
+  display: none;
+  width: 98%;
+  padding-left: 2%;
+  margin-right: 0;
+  background-color: #3d3d3d;
+  padding-bottom: 19px; }
+
+#assetRequest #innerDiv h2 {
+  padding-top: 1%;
+  margin: 0; }
+
+#assetRequest #innerDiv #assetRequestData {
+  width: 100%; }
+
+#assetRequest .hidden {
+  display: none; }
+
+#assetRequest .plusMinus {
+  height: 20%;
+  width: 32%;
+  margin-top: 19px;
+  border-radius: 60px; }
+
+#assetRequest main .display-block {
+  display: block; }
+
+#assetRequest main .display-none {
+  display: none; }
+
+#assetRequest main section .display-table {
+  display: table; }
+
+#assetRequest .desktopHide {
+  display: none; }
+
+#assetRequest #availableDevices > li:nth-child(even) {
+  background-color: #424242; }
+
+#assetRequest #availableDevices > li:nth-child(odd) {
+  background-color: #3d3d3d; }
+
+/*=====================
+Media Query for mobile version
+=======================*/
+@media screen and (max-width: 480px) {
+  #assetRequest #searchSmall {
+    display: block;
+    font-size: 16px;
+    background: transparent;
+    border: 0;
+    color: #bdbdbd;
+    margin-top: 15px;
+    border-bottom: 2px solid #3d3d3d;
+    outline: 0; }
+
+  #assetRequest h1 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0; }
+
+  #assetRequest .desktopHide {
+    display: block;
+    float: left; }
+
+  #assetRequest .small-view-odd, #assetRequest .small-view-even {
+    color: white;
+    display: inline-block;
+    float: left;
+    padding: 5px 0; }
+
+  #assetRequest .small-view-odd {
+    background-color: #3d3d3d;
+    width: 94%; }
+
+  #assetRequest .small-view-even {
+    background-color: #424242;
+    width: 94%; }
+
+  #assetRequest .request-button-pending {
+    position: relative;
+    left: 50%;
+    background-color: #2C7F9E;
+    border: 0;
+    border-radius: 2px;
+    color: #ffffff;
+    margin-top: 5px;
+    font-size: x-small;
+    padding: 5px; }
+
+  #assetRequest #content-end {
+    margin-bottom: 20px; }
+
+  #assetRequest .plusMinus {
+    width: 83%;
+    margin-top: 18px;
+    margin-left: 80%; }
+
+  #assetRequest .mob-col-10 {
+    padding-left: 2%; }
+
+  #assetRequest .mob-to-right {
+    margin-left: 34%; }
+
+  #assetRequest #availableDevices > li > div:first-child {
+    padding: 0; }
+
+  #assetRequest .span-text span {
+    position: absolute;
+    left: 65%;
+    top: 5px; } }
+
+/*# sourceMappingURL=global.css.map */

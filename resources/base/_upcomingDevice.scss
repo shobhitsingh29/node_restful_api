@@ -1,0 +1,101 @@
+/*
+* NAME OF THE STYLESHEET (upcomingDevice.scss)
+* The styles in this file represent styles for the Upcoming Device page for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    PLAVIKA SINGH, SapientNitro <psingh122@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*
+*
+*/
+
+
+#upcomingDev #leftPanel > ul ~div {
+    display: none;
+}
+
+#upcomingDevice{
+    background-color:#424242;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* To hide labels*/
+#upcomingDevice .label-hidden{
+    display: none;
+}
+#upcomingDevice label.error {
+    display: block;
+    margin-top : 5px;
+    margin-left: 2%;
+}
+
+#upcomingDevice input[type="text"]{
+    padding-left: 3%;
+    margin-top: 35px;
+    font-size: medium;
+    margin-left: 2%;
+    width: 60%;
+}
+
+#upcomingDevice input[type="submit"]{
+    font-size: medium;
+    margin: 30px 0 100px 2%;
+    width:40%;
+}
+
+#upcomingDevice div{
+    margin-bottom: 8px;
+}
+
+#upcomingDevice .label-to-appear{
+    color: #979797;
+    font-size: medium;
+    margin-right: 6%;
+}
+
+.selectMenu {
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+#browserDropBox{
+    color: #979797;
+    background-color: #424242;
+    width: 100px;
+    padding: 4px;
+    font-size: medium;
+}
+
+.ui-menu .ui-menu-item ,.ui-state-default ,.ui-state-focus {
+    background: #424242;
+    border-radius: 0;
+    color: #979797;
+    outline: 0;
+}
+.ui-menu-item .ui-state-focus,.ui-widget-content .ui-state-hover ,.ui-widget-content .ui-state-focus {
+    background: #3faad1;
+    color: #ffffff;
+}
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image:url("/public/javascripts/vendor/jquery-ui-1.11.4.custom/images/ui-icons_888888_256x240.png")
+}
+
+/*=====================
+Media Query for small version
+=======================*/
+@media only screen and (max-width: 480px){
+
+    #upcomingDevice input[type="text"],#upcomingDevice input[type="submit"] , #browserDropBox {
+        width:90%;
+    }
+
+    .ui-state-default {
+        margin-top:10px;
+    }
+
+}
+

@@ -1,0 +1,80 @@
+#lightBox #popup{
+    width:40%;
+
+}
+#lightBox .popup-opaque {
+    border: none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color: #000;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+}
+
+
+#lightBox .popup-heading {
+    border: none;
+    color:#b8b8b8;
+    position: absolute;
+    border-radius: 10px;
+    top:20%;
+    left:32%;
+    z-index: 11;
+}
+
+
+#lightBox .popup-heading h2 {
+    border: none;
+    border-radius: 10px 10px 0 0;
+    padding:20px;
+    background-color:#1b1a1a;
+    font-family: "Sapient Centro Slab";
+}
+
+#lightBox .popup-data {
+    border: none;
+    border-radius: 0 0 10px 10px;
+    padding:20px;
+    background-color: #2a2a2a;
+    font-family: "Sapient Centro Slab";
+
+}
+
+#lightBox .popup-data p {
+    font-family: "Sapient Centro Slab";
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#lightBox .popup-bold {
+    font-weight: bold;
+    color:#fbfbfb;
+    font-size: 115%;
+    margin:10px 0;
+}
+
+#lightBox .popup-data ul {
+    padding-left: 15px;
+}
+
+#lightBox .popup-data ul li {
+    padding:7px ;
+    list-style-type: disc;
+}
+
+/*.popup-button*/
+#lightBox .popup-data input[type="button"] {
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    width: 58%;
+    padding: 10px 0 10px 0;
+    background-color: rgb(218, 38, 39);
+    margin: 20px 22%;
+    color: #fff;
+}

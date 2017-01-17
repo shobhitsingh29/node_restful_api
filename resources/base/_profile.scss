@@ -1,0 +1,61 @@
+
+
+#myProfile {
+    .edit-content {
+        display: inline-block;
+        position: relative;
+        left: 59%;
+    }
+    .edit-field {
+        position: relative;
+        right: 4%;
+    }
+    .error {
+        display: block;
+        padding: 1%;
+    }
+    section {
+        background-color: #424242;
+        border-radius: 0.313em;
+        margin-top: 0.313em;
+        display: block;
+    }
+    label {
+        display: none;
+    }
+    input[type="submit"] {
+        font-size: medium;
+        width: 43%;
+        margin: 2.5em 0 4em 0;
+    }
+    form {
+        margin-left: 0.938em;
+        padding: 0;
+    }
+    input {
+        &[type="text"], &[type="password"] {
+            padding: 1.7em 0 0.5em 0.5em;
+            width: 58%;
+            font-size: medium;
+        }
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    #myProfile {
+        input {
+            &[type="text"], &[type="password"], &[type="submit"] {
+                width: 80%;
+            }
+        }
+        .edit-content {
+            display: inline-block;
+            position: relative;
+            left: 82%;
+        }
+        .edit-field {
+            position: relative;
+            right: 6%;
+        }
+    }
+}

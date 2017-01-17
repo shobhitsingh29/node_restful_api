@@ -1,0 +1,20 @@
+[
+  {
+    "id": 101,
+    "deviceName": "iPad",
+    "browser": ["Safari", "Chrome", "firefox"],
+    "os": "IOS7"
+  },
+  {
+    "id": 101,
+    "deviceName": "iPad",
+    "browser": ["Safari", "Chrome", "firefox"],
+    "os": "IOS7"
+  },
+  {
+    "id": 102,
+    "deviceName": "iPad",
+    "browser": ["Safari", "Chrome", "firefox"],
+    "os": "IOS7"
+  }
+]

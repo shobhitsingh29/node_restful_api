@@ -1,0 +1,162 @@
+/**
+* NAME OF THE STYLESHEET (manageDevice.css)
+* The styles in this file represent styles for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    SHOBHIT SINGH, SapientNitro <ssingh239@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*
+*
+*
+*/
+
+#manageDevice {
+    #content ul li {
+        width: 98%;
+    }
+    .heading {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    #search {
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid $li-header-li-background-color;
+        color: #bdbdbd;
+        float: right;
+        font-size: 20px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        letter-spacing: 2px;
+        outline: 0;
+        width: 90%;
+    }
+    #availableDevices > li {
+        float: left;
+        color: #ffffff;
+    }
+    .head-row {
+        background-color: #373737;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        color: #bdbdbd;
+        float: left;
+        width: 100%;
+        padding: 10px 0;
+        > li div {
+            display: inline-block;
+            text-align: center;
+            word-wrap: break-word;
+        }
+    }
+    #availableDevices > li {
+        div {
+            display: inline-block;
+            line-height: 2;
+            margin-right: 0;
+            word-wrap: break-word;
+        }
+        > div:first-child {
+            padding-left: 4%;
+        }
+    }
+    .head-row div {
+        &:nth-child(3) {
+            text-align: left;
+            padding-left: 3%;
+            width: 35%;
+        }
+        &:last-child {
+            padding-left: 4%;
+            width: 15%;
+        }
+    }
+    .image-div {
+        float: right;
+        position: absolute;
+        width: 6%;
+    }
+    .delete, .edit {
+        display: inline-block;
+        position: relative;
+        left: 20%;
+        top: 13px;
+    }
+    main {
+        .display-block {
+            display: block;
+        }
+        section .display-table {
+            display: table;
+        }
+    }
+    #availableDevices > li {
+        &:nth-child(even) {
+            background-color: #424242;
+        }
+        &:nth-child(odd) {
+            background-color: #3d3d3d;
+        }
+    }
+    label, #searchSmall, .hidden, main .display-none, .desktopHide {
+        display: none;
+    }
+    &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    #manageDevice {
+        #searchSmall {
+            display: block;
+            font-size: 16px;
+            background: transparent;
+            border: 0;
+            color: #bdbdbd;
+            margin-top: 15px;
+            border-bottom: 2px solid #3d3d3d;
+            outline: 0;
+        }
+        h1 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+        .desktopHide {
+            display: block;
+            float: left;
+        }
+        .small-view-odd, .small-view-even {
+            color: #FFF;
+            display: inline-block;
+            float: left;
+            padding: 5px 0;
+        }
+        .small-view-odd {
+            background-color: #3d3d3d;
+            width: 94%;
+        }
+        .small-view-even {
+            background-color: #424242;
+            width: 94%;
+        }
+        .mob-col-10 {
+            padding-left: 2%;
+        }
+        .mob-to-right {
+            margin-left: 34%;
+        }
+        #availableDevices > li > div:first-child {
+            padding-left: 2%;
+        }
+        .delete, .edit {
+            top: 36px;
+        }
+        #content {
+            margin-bottom: 20px;
+        }
+    }
+}

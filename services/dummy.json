@@ -1,0 +1,20 @@
+[
+  {
+    "Name":"Aniket",
+    "email":"abc@sapient.com",
+    "Age":21,
+    "Location":"Gurgaon"
+  },
+
+  {
+    "Name":"Bimal",
+    "Age":22,
+    "Location":"Noida"
+  },
+
+  {
+    "Name":"Chiranjeevi",
+    "Age":23,
+    "Location":"Bangalore"
+  }
+]

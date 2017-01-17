@@ -1,0 +1,14 @@
+[
+  {
+    "src":"/public/images/system/tablet.jpg",
+    "name":"Tablet"
+  },
+  {
+    "src":"/public/images/system/ipad.jpg",
+    "name":"IPad"
+  },
+  {
+    "src":"/public/images/system/iphone.jpg",
+    "name":"IPhone"
+  }
+]

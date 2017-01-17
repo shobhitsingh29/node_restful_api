@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1006,
+    "title": "Total Damaged Devices",
+    "deviceCount": "4 Damage"
+  },
+  {
+    "id": 1007,
+    "title": "Number of Unused Devices",
+    "deviceCount": "3 Unused"
+  },
+  {
+    "id": 1008,
+    "title": "Number of Pending Devices",
+    "deviceCount": "1 Pending"
+  },
+  {
+    "id": 1009,
+    "title": "Number of Queued Devices",
+    "deviceCount": "3 Queued"
+  }
+]

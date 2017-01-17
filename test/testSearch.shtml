@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>This is a testing file for the search component</title>
+    <link href="../node_modules/qunitjs/qunit/qunit.css" rel="stylesheet">
+    <script src="../public/javascripts/vendor/jquery/jquery-1.12.0.js"></script>
+    <script src="../node_modules/qunitjs/qunit/qunit.js"></script>
+    <link href="/public/css/global.css" rel="stylesheet">
+</head>
+<body>
+<h1 id="qunit-header">QUnit Test Suite</h1>
+<h2 id="qunit-banner"></h2>
+<div id="qunit-testrunner-toolbar"></div>
+<h2 id="qunit-userAgent"></h2>
+<ol id="qunit-tests"></ol>
+<h2>User can input 101, Pad or 109 for validating test cases</h2>
+    <div>
+    	<!--#include file="../views/global/filter.html" -->
+        <!--#include file="../views/deviceHistory.html" -->
+    </div>
+</div>
+</body>
+<script src="../public/javascripts/global/common/common.js"></script>
+<script src="../config.js"></script>
+<script src="../public/javascripts/vendor/debounce.js"></script>
+<script src="../public/javascripts/deviceHistory/deviceHistory.js"></script>
+<script src="../public/javascripts/search/search.js"></script>
+<script src="testSearch.js"></script>
+</html>

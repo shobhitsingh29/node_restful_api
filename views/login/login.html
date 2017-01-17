@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE=Edge,chrome=1"/>
+    <meta name="description" content="ASSET TRACKER LOGIN"/>
+    <meta name="keywords" content="ASSET TRACKER,LOGIN"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1"/>
+    <title>Asset Tracker Login</title>
+    <link href="/public/css/global.css" rel="stylesheet">
+</head>
+<body>
+
+<main id="login" role="main" class="container clear-fix">
+<section role="region" class="col-12 mob-col-12" >
+
+    <!-- ====================== Main Heading begins...===============================  -->
+
+    <!--[if lt IE 8]>
+    <p>You are using an<strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div id='heading' class="col-7 mob-col-12">
+        <div id="logoImage">
+         <span  class='sprite logosapient' title="logo of sapient"></span>
+        </div>
+        <div id="mainHeadingDiv">
+            <h1><span>ASSETS</span>
+                TRACKER SYSTEM</h1>
+        </div>
+    </div>
+
+    <!--  =========================  Main Heading  ends... ==========================   -->
+
+
+    <!--        ================== Login form  begins... ==========================   -->
+    <div class='form col-5 mob-col-11' >
+        <form method="get" name="loginform" id="loginForm">
+            <fieldset>
+                <legend class="login-hidden">LOGIN</legend>
+                <h2>LOGIN</h2>
+
+                <div class="login-container">
+            <label class="login-hidden" for="username">Username:</label>
+
+                    <!-- i tag is for icon and sprites  -->
+                <span class='sprite usernameIcon '></span>
+            <input id="username" name="username" autofocus autocomplete="on" type="text" class="form-inputBox form-input"
+                     placeholder="Username" />
+                </div>
+
+
+                <div class="login-container">
+            <label class="login-hidden" for="password">Password:</label >
+                    <!-- i tag is for icon and sprites  -->
+                <span class='sprite username'></span>
+            <input id="password" name="userpassword"  type="password" class="form-inputBox form-input"
+                    placeholder="Password"  />
+                </div>
+
+            <label class="login-hidden" for="loginBtn">Login:</label>
+            <input type="submit"  id="loginBtn" name="login" value="LOGIN" class="primary-button" />
+            <div id="rememberDiv" >
+                <input type="checkbox" id="rememberCb" name="checkbox" />
+                <label for="rememberCb">
+                    <span></span>Remember me</label>
+            </div>
+            <div id="containerHr">
+                <div id="hrLeft" class="to-left">
+                    <hr/>
+                </div>
+                <span>OR</span>
+                <div id="hrRight" class="to-right">
+                    <hr/>
+                </div>
+            </div>
+                <a id="signUpBtn" href="signUp.html" class="like-a-button">SIGN UP</a>
+            </fieldset>
+        </form>
+       <!-- =================== Login form  ends..=======================   -->
+    </div>
+
+    </section>
+</main>
+<script src="/public/javascripts/vendor/jquery/jquery-1.12.0.js" ></script>
+<script src="/public/javascripts/vendor/jquery/jquery.validate.js" type="text/javascript"></script>
+<script src="/public/javascripts/vendor/jquery/additional-methods.js" type="text/javascript"></script>
+<script src="/public/javascripts/vendor/placeholder.js" type="text/javascript"></script>
+<script src="/public/javascripts/vendor/respond.min.js"></script>
+<script src="/config.js" type="text/javascript"></script>
+<script src="/public/javascripts/global/common/common.js" type="text/javascript"></script>
+<script src="/public/javascripts/validate/validate.js" type="text/javascript"></script>
+<script src="/public/javascripts/global/lightBox/lightBox.js" type="text/javascript"></script>
+<script src="/public/javascripts/login/login.js" type="text/javascript"></script>
+</body>
+</html>

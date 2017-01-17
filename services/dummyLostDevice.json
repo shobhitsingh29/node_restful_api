@@ -1,0 +1,10 @@
+[{"serialNumber":"1234563","assetNumber":"101","deviceType":"mobile","deviceName":"iphone4"},
+  {"serialNumber":"1234564","assetNumber":"102","deviceType":"mobile","deviceName":"iphone5"},
+  {"serialNumber":"1234565","assetNumber":"103","deviceType":"mobile","deviceName":"iphone6"},
+  {"serialNumber":"1234566","assetNumber":"104","deviceType":"mobile","deviceName":"iphone6s"},
+  {"serialNumber":"1234567","assetNumber":"105","deviceType":"mobile","deviceName":"iphone5s"},
+  {"serialNumber":"1234568","assetNumber":"106","deviceType":"laptop","deviceName":"HP notebook"},
+  {"serialNumber":"1234569","assetNumber":"107","deviceType":"laptop","deviceName":"Dell notebook"},
+  {"serialNumber":"1234570","assetNumber":"108","deviceType":"mobile","deviceName":"blackberry"},
+  {"serialNumber":"1234571","assetNumber":"109","deviceType":"tablet","deviceName":"ipad 4"},
+  {"serialNumber":"1234572","assetNumber":"110","deviceType":"tablet","deviceName":"Samsung Galaxy Tab 3"}]

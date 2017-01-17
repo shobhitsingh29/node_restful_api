@@ -1,0 +1,83 @@
+/*=========== Variables for Common CSS ===========*/
+$font-stack: SapientCentroSlab-XThin;
+$secondary-font: Arial;
+$font-size: 0.875em;
+$font-style: normal;
+$text-align: center;
+$ul-list-style-type: none;
+$html-min-height: 100%;
+$placeholder-color: #979797;
+$form-input-border-bottom-color: #969696;
+$body-background-image: url("/public/images/system/common/background.png");
+$body-background-size:100% 100%;
+$button-cursor: pointer;
+$primary-secondary-button-height: 3.125em;
+$primary-secondary-button-width: 56%;
+$primary-button-background-color:#da2627;
+$primary-button-color: #ffffff;
+$border-button-color: transparent;
+$secondary-button-background-color: #ffffff;
+$secondary-button-color: #808080;
+$h1-color:  #ffffff;
+$h1-text-transform: uppercase;
+$h1-letter-spacing:3px;
+$form-input-box-background: none;
+$form-input-box-width: 51%;
+$form-input-color: #ffffff;
+$container-width: 960px;
+$container-margin: 0 auto;
+$error-page-background: none;
+$error-page-h1-color: red;
+$error-label-color: red;
+$asset-tracker-main-font:  url("/public/fonts/SapientCentroSlab-XThin.otf");
+
+/*=========== Variables for Header ===========*/
+
+$header-height: 58px;
+$header-desktop-background-image: url("/public/images/system/DesktopHeader.png");
+$header-mobile-background-image: url("/public/images/system/common/mobileHeader.png");
+$font-size-userName-in-header:14px;
+$color-userName-in-header: #333333;
+
+/*=========== Variables for Login ===========*/
+
+$login-color-h2:#FFF;
+$login-color-hr-span:#FFF;
+$login-color-anchor:#2e60a5;
+
+/*========== Variables for Device History, Manage Devices and Asset Request========*/
+
+$li-even-li-background-color:#424242;
+$li-odd-li-background-color:#3d3d3d;
+$li-header-li-background-color:#373737;
+$font-head-li-color:#bdbdbd;
+$font-li-color:#ffffff;
+$search-width-desktop:90%;
+@mixin text-align($text-align) {
+  -webkit-input-placeholder: $text-align;
+  -moz-input-placeholder: $text-align;
+  -ms-input-placeholder: $text-align;
+  text-align: $text-align;
+}
+
+/*=========== Variables for Left Panel ===========*/
+
+$color-background-carouselControls: #da2627;
+$color-text-carouselControls: #d1d1d1;
+$border-radius-carouselControls: 5px;
+$height-carousel: 10em;
+$complete-height-carousel: 100%;
+$complete-width-carousel: 100%;
+
+/*=========== Variables for Filter ===========*/
+
+$filter-background-color: #000000;
+$filter-font-color: #808080;
+$filter-width: 94%;
+$filter-opacity: 1;
+$filter-checkbox-width: 28px;
+$filter-checkbox-opacity: 0.3;
+
+/*============================= variables for User Profile===================*/
+
+$background-color:#424242;

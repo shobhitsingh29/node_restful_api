@@ -1,0 +1,33 @@
+
+input[type="checkbox"] {
+    display:none;
+
+}
+input[type="checkbox"] + label {
+    display: inline-block;
+    color: #dfdfdf;
+    cursor:pointer;
+}
+
+input[type="checkbox"] + label span{
+    padding-left:1.2em;
+    color:#FFF;
+    float:left;
+    display: inline-block;
+    height: 18px;
+    margin: -3px 8px 5px 0px;
+    border: 1px solid white;
+    /*vertical-align:middle;*/
+    cursor:pointer;
+    -moz-border-radius:0%;
+    border-radius:0%;
+}
+
+input[type="checkbox"] + label span {
+    background-color:transparent;
+}
+
+input[type="checkbox"]:checked + label span{
+    background-image:url("http://photo.mylife.com/photos/000/400/143M.jpg");
+    background-size: 2px;
+}

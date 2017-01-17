@@ -1,0 +1,128 @@
+/*Font
+=============================================================================*/
+@font-face {
+    font-family: $font-stack;
+    src: $asset-tracker-main-font format("opentype");
+}
+
+/*Html
+=============================================================================*/
+html{
+    min-height: $html-min-height;
+    position: relative;
+}
+/*Body
+=============================================================================*/
+body{
+    background: $body-background-image no-repeat;
+    background-size: $body-background-size;
+    font-size: $font-size;
+    font-style: $font-style;
+}
+
+body, input, span, label, select ,h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu,nav, output, section, summary,
+time, mark, audio, video,canvas{
+    font-family: $font-stack, $secondary-font;
+}
+
+/*primary Button
+=============================================================================*/
+.primary-button,.secondary-button  {
+    cursor: $button-cursor;
+    border: 1px solid $border-button-color;
+    border-radius: 0.3125em;
+    font-size: $font-size;
+    height: $primary-secondary-button-height;
+    outline: 0;
+    text-align: $text-align;
+    width: $primary-secondary-button-width;
+}
+.primary-button
+{
+    background-color: $primary-button-background-color;
+    color: $primary-button-color;
+}
+.secondary Button
+{
+    color: $secondary-button-color;
+    background-color: $secondary-button-background-color;
+}
+
+/*H1 Tag
+=============================================================================*/
+h1{
+    color: $h1-color;
+    text-transform: $h1-text-transform;
+    letter-spacing: $h1-letter-spacing;
+}
+
+/*Input Box
+=============================================================================*/
+input[type="text"],input[type="email"],input[type="tel"],input[type="password"]{
+    background: $form-input-box-background;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid $form-input-border-bottom-color;
+    outline: 0;
+    width: $form-input-box-width;
+}
+
+/*Input Box content
+=============================================================================*/
+.form-input {
+    color: $form-input-color;
+    font-size: $font-size;
+    padding-left: 5%;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="text"]:-ms-input-placeholder {
+    color: $placeholder-color;
+}
+
+.container{
+    max-width: $container-width;
+    margin: $container-margin;
+}
+.clear-fix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#errorPage{
+    background: $error-page-background;
+    text-align: $text-align;
+}
+
+#errorPage h1{
+    color: $error-page-h1-color;
+}
+
+/*Error handling classes
+=============================================================================*/
+.form-error {
+    color: $error-label-color;
+}
+.form-hidden {
+    display: none;
+}
+
+/*Cursor shape
+=============================================================================*/
+.cursorPointer{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 30em){
+    h1{
+        margin-left: 2%;
+    }
+}

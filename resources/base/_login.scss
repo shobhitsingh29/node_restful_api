@@ -1,0 +1,216 @@
+/**
+* NAME OF THE STYLESHEET (login.css)
+* The styles in this file represent styles for the Sapient ASSET TRACKER SYSTEM site.
+* @project   ASSET TRACKER SYSTEM
+* @date      2015-12-23
+* @author    SHOBHIT SINGH, SapientNitro <ssingh239@sapient.com>
+* @licensor  SAPIENT
+* @site      ASSET TRACKER SYSTEM
+*
+*
+*
+*/
+/*============================  container ======================*/
+
+
+
+#login {
+    display: block;
+    .like-a-button {
+        display: inline-block;
+        background: $secondary-button-background-color;;
+        text-align: center;
+        border-radius: 7px;
+        width: 71%;
+        height: 46px;
+        margin-top: 20px;
+        font-weight: bold;
+        line-height: 45px;
+        font-size: 1.2em;
+        border: 1px solid transparent;
+        appearance: button;
+        -moz-appearance: button;
+        -webkit-appearance: button;
+        color: $secondary-button-color;
+        padding: 2px 8px;
+    }
+    .login-container {
+        position: relative;
+        margin-bottom: 32px;
+        margin-top: 9px;
+    }
+    section {
+        position: relative;
+        margin-top: 150px;
+        display: table;
+    }
+    .sprite {
+        display: inline-block;
+        &.usernameIcon {
+            position: absolute;
+            margin-top: 24px;
+        }
+        &.logosapient {
+
+        }
+        &.username {
+            position: absolute;
+            margin-top: 24px;
+            background-position: 0 -5114px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    #heading {
+        margin-top: 47px;
+        display: table-cell;
+    }
+    h2 {
+        color: #FFF;
+        font-size: 1.8em;
+    }
+    label.error {
+        display: inline-block;
+        margin-top: 4px;
+    }
+    h1 {
+        font-size: 3.71em;
+        margin-top: 42px;
+        font-weight: lighter;
+        span {
+            padding-right: 44%;
+        }
+    }
+    .login-hidden {
+        display: none;
+    }
+    .form {
+        display: table-cell;
+    }
+    .color-red {
+        color: red;
+    }
+    #mainHeadingDiv {
+        letter-spacing: 4px;
+    }
+    #rememberDiv {
+        width: 75%;
+        padding-top: 36px;
+        padding-bottom: 15px;
+    }
+    .form-input {
+        width: 67%;
+        font-size: 1.2em;
+        padding-left: 8%;
+        padding-bottom: 2px;
+    }
+
+    input {
+        margin-top: 7%;
+    }
+    #containerHr {
+        clear: both;
+        width: 75%;
+        span {
+            padding-left: 6%;
+            color: #FFF;
+            float: left;
+        }
+    }
+    form span {
+        padding-left: 1.2em;
+        color: $login-color-hr-span;
+        float: left;
+    }
+    .primary-button {
+        width: 75%;
+        font-size: 1.2em;
+    }
+    #hrLeft, #hrRight {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    #login {
+        #heading {
+            margin-top: 0;
+        }
+        #logoImage {
+            margin-left: 32%;
+        }
+        #mainHeadingDiv {
+            margin-left: 10%;
+            margin-top: 20px;
+        }
+        h1 span {
+            padding-right: 0;
+        }
+        h2 {
+            padding-left: .5em;
+            font-size: 1.4em;
+        }
+        h1 {
+            font-size: 1.7em;
+            margin: 0;
+        }
+        .form {
+            position: relative;
+            left: 7%;
+            #loginForm {
+                margin-top: 10%;
+                font-size: 1.2em;
+            }
+        }
+
+        input {
+            margin-left: 3%;
+            margin-top: 30px;
+        }
+        #containerHr {
+            clear: both;
+            margin-left: 3%;
+            height: 1em;
+            width: 75%;
+        }
+        #hrLeft {
+            width: 41%;
+        }
+        #containerHr span {
+            padding-left: 5%;
+            color: #FFF;
+            float: left;
+        }
+        #hrRight {
+            width: 40%;
+        }
+        form span {
+            padding-left: 20px;
+            color: #FFF;
+            float: left;
+        }
+        #rememberDiv {
+            label span {
+                float: left;
+            }
+            margin-left: 5%;
+        }
+        .sprite {
+            &.logosapient {
+                margin: 0 auto;
+            }
+            &.usernameIcon, &.username {
+                margin-left: 3%;
+                top: 7px;
+            }
+        }
+        section {
+            margin-top: 10px;
+        }
+        .like-a-button {
+
+            margin-left: 1%;
+            height: 52px;
+        }
+    }
+}

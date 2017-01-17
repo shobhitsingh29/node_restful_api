@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=yes"/>
+   <title>Asset Tracker</title>
+   <link href="/public/css/global.css" rel="stylesheet">
+</head>
+<body>
+   <!--header section of page-->
+   <!--#include file="../global/header/header.html" -->
+   <!--navigation menu of page-->
+   <!--#include file="../global/navigation/navigation.html" -->
+   <!--main section of page-->
+   <div class="container clear-fix">
+      <div class="hide-mobile"><!--#include file="../global/filter/filter.html" -->
+      </div>
+      <!--#include file="manageDevice.html" -->
+   </div>
+   <!--footer section of page-->
+   <!--#include file="../global/footer/footer.html" -->
+   <script src="/public/javascripts/search/search.js"></script>
+   <script src="/public/javascripts/manageDevice/manageDevice.js"></script>
+</body>
+</html>

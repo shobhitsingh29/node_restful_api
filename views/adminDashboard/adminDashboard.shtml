@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=yes"/>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link href="/public/css/global.css" rel="stylesheet">
+</head>
+<body>
+<!--header section of page-->
+<!--#include file="../global/header/header.html" -->
+<!--navigation menu of page-->
+<!--#include file="../global/navigation/navigation.html" -->
+<div class="container clear-fix">
+        <div class="hide-mobile"><!--#include file="../global/leftPanel/leftPanel.html" --></div>
+        <!--#include file="adminDashboard.html" -->
+    </div>
+<!--footer section of page-->
+<!--#include file="../global/footer/footer.html" -->
+
+    <script src="/public/javascripts/dashboard/dashboard.js"></script>
+    <script src="/public/javascripts/dashboard/dashboardCarousel.js"></script>
+    <script src="/public/javascripts/global/leftPanel/leftPanel.js"></script>
+</body>
+</html>
