@@ -2,7 +2,7 @@
   "name": "Node_Json_Crud",
   "version": "1.0.0",
   "devDependencies": {
-    "body-parser": "~1.0.1",
+    "body-parser": "~1.19.0",
     "bower": "^1.7.x",
     "express": "^4.13.4",
     "extend": "^3.0.0",
